@@ -32,6 +32,7 @@
 		8469A6011BA86E80006BCE71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8469A5FF1BA86E80006BCE71 /* LaunchScreen.xib */; };
 		8469A60D1BA86E80006BCE71 /* yueFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8469A60C1BA86E80006BCE71 /* yueFMTests.m */; };
 		8474261D1BAF1F4600255261 /* testNewBranch.c in Sources */ = {isa = PBXBuildFile; fileRef = 8474261B1BAF1F4600255261 /* testNewBranch.c */; settings = {ASSET_TAGS = (); }; };
+		8474261F1BAF20B900255261 /* testFileInBranch2 in Resources */ = {isa = PBXBuildFile; fileRef = 8474261E1BAF20B900255261 /* testFileInBranch2 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8469A60C1BA86E80006BCE71 /* yueFMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yueFMTests.m; sourceTree = "<group>"; };
 		8474261B1BAF1F4600255261 /* testNewBranch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testNewBranch.c; sourceTree = "<group>"; };
 		8474261C1BAF1F4600255261 /* testNewBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testNewBranch.h; sourceTree = "<group>"; };
+		8474261E1BAF20B900255261 /* testFileInBranch2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testFileInBranch2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				8469A5FD1BA86E80006BCE71 /* Images.xcassets */,
 				8469A5FF1BA86E80006BCE71 /* LaunchScreen.xib */,
 				8469A5F01BA86E80006BCE71 /* Supporting Files */,
+				8474261E1BAF20B900255261 /* testFileInBranch2 */,
 			);
 			path = yueFM;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				8469A6011BA86E80006BCE71 /* LaunchScreen.xib in Resources */,
 				58D02D291BAA571400636612 /* Icon-Small-50@2x.png in Resources */,
 				58D02D271BAA571400636612 /* Icon-72@2x.png in Resources */,
+				8474261F1BAF20B900255261 /* testFileInBranch2 in Resources */,
 				58D02D281BAA571400636612 /* Icon-Small-50.png in Resources */,
 				58D02D231BAA571400636612 /* desktop-568h@2x.png in Resources */,
 				58D02D2C1BAA571400636612 /* Icon.png in Resources */,
