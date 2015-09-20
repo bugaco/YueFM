@@ -72,6 +72,7 @@
                       //加上左边的“左拉阅读下一篇”
            self.flickView = [[UIView alloc]init];
            self.flickView.frame = CGRectMake(SCREEN_SIZE.width + 20, 80, 40, 180);
+           
            [self.scrollView addSubview:self.flickView];
                       //加上flick图片
            UIImageView *flickImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon_flick_sun.png"]];
@@ -96,6 +97,7 @@
            NSURL *url = [NSURL URLWithString:RANDOM_URL];
            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:NSJSONReadingMutableContainers error:nil];
            return [NSString stringWithFormat:@"%@%@", PRE_ARTILE_URL, dic[@"short_id"]];
+//           return @"http://www.baidu.com";
 }
 //进行拖拽时
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -133,12 +135,18 @@
 -(void)didEndDraggingOrDecelerating{
            //判断：如果此时滚动到了第二页，则立即加载下一片文章，并延迟复位scrollView
            if (self.scrollView.contentOffset.x == SCREEN_SIZE.width) {
-                      
-                      [self setDefaultContentOffSet];
+                      [self cleanWebView];
+                      [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(setDefaultContentOffSet) userInfo:nil repeats:NO];
+//                      [self setDefaultContentOffSet];
                       
            }
 
 }
+//清空webView的内容
+-(void)cleanWebView{
+           [self.webView loadHTMLString:@"" baseURL:nil];
+}
+
 //scrollView复位，先加载文章，阻塞主线程，防止拖动界面，文章加载成功后，显示scrollView的第一页
 -(void)setDefaultContentOffSet{
            [self startActivityIndicatorAnimating];
