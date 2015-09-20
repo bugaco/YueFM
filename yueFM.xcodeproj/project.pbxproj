@@ -31,6 +31,7 @@
 		8469A5FE1BA86E80006BCE71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8469A5FD1BA86E80006BCE71 /* Images.xcassets */; };
 		8469A6011BA86E80006BCE71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8469A5FF1BA86E80006BCE71 /* LaunchScreen.xib */; };
 		8469A60D1BA86E80006BCE71 /* yueFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8469A60C1BA86E80006BCE71 /* yueFMTests.m */; };
+		8474261D1BAF1F4600255261 /* testNewBranch.c in Sources */ = {isa = PBXBuildFile; fileRef = 8474261B1BAF1F4600255261 /* testNewBranch.c */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		8469A6061BA86E80006BCE71 /* yueFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yueFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8469A60B1BA86E80006BCE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8469A60C1BA86E80006BCE71 /* yueFMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yueFMTests.m; sourceTree = "<group>"; };
+		8474261B1BAF1F4600255261 /* testNewBranch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testNewBranch.c; sourceTree = "<group>"; };
+		8474261C1BAF1F4600255261 /* testNewBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testNewBranch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				58D02D151BAA571400636612 /* images */,
+				8474261B1BAF1F4600255261 /* testNewBranch.c */,
+				8474261C1BAF1F4600255261 /* testNewBranch.h */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8474261D1BAF1F4600255261 /* testNewBranch.c in Sources */,
 				8469A5F91BA86E80006BCE71 /* ViewController.m in Sources */,
 				8469A5F61BA86E80006BCE71 /* AppDelegate.m in Sources */,
 				8469A5F31BA86E80006BCE71 /* main.m in Sources */,
